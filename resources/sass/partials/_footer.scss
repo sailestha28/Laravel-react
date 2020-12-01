@@ -1,0 +1,252 @@
+/*===========================================================
+###footer scss
+===========================================================*/
+.site-footer {
+    padding-top: 80px;
+    padding-bottom: 0px;
+    background-color: $back-color;
+
+    .shopify-section {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    @media(min-width: 767px) {
+        padding-top: 65px;
+    }
+
+
+    .widget-details {
+        figure {
+            margin: 0;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        .f-title {
+
+            margin-bottom: 10px;
+
+        }
+
+        .content-text {
+            color: $content-color;
+            font-size: 16px;
+            font-family: 'GiovanniStd-Book', serif;
+            margin-bottom: 20px;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+    }
+
+    .widget-footer {
+        .f-title {
+            font-weight: 600;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        ul {
+            li {
+                a {
+                    line-height: 2;
+                    font-size: 16px;
+                    color: $content-color;
+
+                    &:hover {
+                        color: $content-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .widget-newsletter {
+
+        .content-text {
+            font-size: 15px;
+            color: #000;
+            font-family: "GiovanniStd-Book", serif;
+            margin-bottom: 15px;
+            margin-top: 20px;
+
+            @media(max-width: 1366px) and (min-width: 992px) {
+                font-size: 14px;
+            }
+
+            @media(max-width: 1280px) {
+                br {
+                    display: none;
+                }
+            }
+        }
+
+        .field-wrap {
+            margin-bottom: 30px;
+        }
+
+        input {
+            width: 100%;
+            font-size: 16px;
+            color: $head-color;
+
+            &::placeholder {
+                font-family: 'GiovanniStd-Book', serif;
+                font-size: 16px;
+                color: $content-color;
+            }
+
+        }
+
+        .btn-wrap {
+            margin-top: 25px;
+        }
+
+    }
+
+    .footer-top {
+        margin-bottom: 60px;
+    }
+
+    .footer-bottom {
+        background-color: #E1E1E1;
+
+        .row {
+            height: 60px;
+            line-height: 60px;
+        }
+
+        p {
+            color: #fff;
+            font-family: 'GiovanniStd-Book', serif;
+            font-size: 14px;
+            margin-bottom: 0;
+
+            strong {
+                font-family: 'GiovanniStd-Book', serif;
+                font-size: 15px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+        }
+
+        .designed {
+            text-align: right;
+        }
+
+        .thumb-wrap {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                height: 35px;
+            }
+
+        }
+    }
+
+    +#shopify-section-size-guide {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+}
+
+
+@media(max-width: 768px) {
+
+    .site-footer .col-md-5,
+    .site-footer .col-md-7 {
+        flex: none;
+        max-width: 100%;
+    }
+
+    .site-footer .widget-details ul.social-icons {
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width: 767px) {
+    .site-footer .footer-bottom .row {
+        height: auto;
+        line-height: 2;
+
+        p {
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .site-footer .f-title {
+        margin-bottom: 20px;
+    }
+
+    .site-footer .widget-details figure {
+        margin-bottom: 15px;
+    }
+
+}
+
+@media(max-width: 480px) {
+    .site-footer .widget-details .content-text {
+        font-size: 14px;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .site-footer {
+        padding-top: 50px;
+    }
+
+    .site-footer .widget-footer .f-title {
+        margin-bottom: 15px;
+    }
+
+    .site-footer .widget-newsletter .f-title {
+        font-size: 16px;
+    }
+
+    .site-footer .widget-newsletter .content-text,
+    .site-footer .widget-newsletter input,
+    .site-footer .widget-newsletter input::placeholder {
+        font-size: 14px;
+    }
+
+    .site-footer .footer-top {
+        margin-bottom: 40px;
+    }
+
+    .site-footer .widget-newsletter .btn-wrap {
+        margin-top: 20px;
+    }
+
+    .site-footer .widget-newsletter .btn-wrap button {
+        width: 100%;
+    }
+
+    .site-footer .footer-bottom .thumb-wrap {
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        img {
+            height: 30px;
+        }
+    }
+
+    .site-footer .widget-footer ul li a {
+        font-size: 14px;
+    }
+}
+
+/*===========================================================
+###End footer scss
+===========================================================*/
